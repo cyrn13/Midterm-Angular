@@ -1,0 +1,43 @@
+
+<div class="body">
+
+    <h1>Product: Lang Leav's First Book</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+                <img src="/assets/realproduct.jpg" class="real" />
+
+                <br>
+                <br>
+              <h5></h5>
+
+                <p class="genre">Genre: FICTION</p>
+
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Novelist and poet, Lang Leav is an international bestselling author and winner of a Qantas Spirit of Youth Award, Churchill Fellowship and Goodreads Choice Award. 
+                    Often credited with popularizing poetry among a new generation of young readers, Lang’s poetry books, and hit novel, Sad Girls continue to top best seller charts around the world.
+
+                    <br>
+                    <br>
+                    Sad Girls is the much anticipated debut novel from international best-selling author Lang Leav. 
+                    A beautifully written and emotionally charged coming of age story, where young love, dark secrets, and tragedy collide.
+                </p>
+                <hr>
+
+                <pre class="rateNum">Rating: <b>{{currentRate}} of 5</b></pre>
+
+                <ngb-rating [max]="5" [(rate)]="currentRate" class="rate">
+                    <ng-template let-fill="fill" let-index="index">
+                        <span class="heart" [class.filled]="fill === 100">&#9829;</span> 
+                    </ng-template>
+                </ngb-rating>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
